@@ -1,17 +1,9 @@
-from kivy.uix.label import Label
-from kivy.clock import Clock
-
+# напиши модуль для подсчета количества приседаний
 
 class Sits(Label):
-   def __init__(self, total, **kwargs):
-       self.current = 0
-       self.total = total
-       my_text = "Осталось приседаний: " + str(self.total)
-       super().__init__(text=my_text, **kwargs)
+    
+    def __init__(self, total, **kwargs):
+        pass
 
-
-   def next(self, *args):
-       self.current += 1
-       remain = max(0, self.total - self.current)
-       my_text = "Осталось приседаний: " + str(remain)
-       self.text=my_text
+    def next(self, *args):
+        pass
